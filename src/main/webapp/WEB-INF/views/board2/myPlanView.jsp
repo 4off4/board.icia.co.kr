@@ -9,8 +9,6 @@
 <html>
 <%
 	int pNoSeq2 = HttpUtil.get(request, "pNoSeq2", 0);	
-	int pStart = HttpUtil.get(request, "pStart", 0);
-	int pEnd = HttpUtil.get(request, "pEnd", 0);
 %>
 <head>
 	<%@ include file="/WEB-INF/views/include/head.jsp"%>

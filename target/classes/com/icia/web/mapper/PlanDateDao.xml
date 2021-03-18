@@ -27,7 +27,7 @@ INSERT INTO PLAN_DATE (
 <select id="planDateSelect2" parameterType="com.icia.web.model.PlanDate" resultMap="planDateResultMap">
 SELECT
     A.P_NO_SEQ2,
-    NVL(A.P_DAY, '') AS P_DAY,
+    TO_CHAR(TO_DATE(NVL(A.P_DAY, '')), 'YYYY-MM-DD') AS P_DAY,
     NVL(A.P_PLACE,'') AS P_PLACE,
     NVL(A.USER_ID2, '') AS USER_ID2
 FROM
@@ -42,7 +42,7 @@ SELECT
     NVL(M.USER_ID2, '') AS USER_ID2,
     NVL(M.P_TITLE, '') AS P_TITLE,
     M.REG_DATE2 AS REG_DATE2,
-    NVL(D.P_DAY, '') AS P_DAY,
+    TO_CHAR(TO_DATE(NVL(D.P_DAY, '')), 'YYYY-MM-DD') AS P_DAY,
     NVL(M.P_START, '') AS P_START,
     NVL(M.P_END, '') AS P_END,
     NVL(D.P_PLACE, '') AS P_PLACE
@@ -56,7 +56,7 @@ ORDER BY P_DAY ASC
 <select id="planViewList" parameterType="com.icia.web.model.PlanDate" resultMap="planDateResultMap">
 SELECT
     NVL(D.P_NO_SEQ2, '') AS P_NO_SEQ2,
-    NVL(D.P_DAY, '') AS P_DAY,
+    TO_CHAR(TO_DATE(NVL(D.P_DAY, '')), 'YYYY-MM-DD') AS P_DAY,
     NVL(D.P_PLACE, '') AS P_PLACE
 FROM PLAN_DATE D 
 WHERE USER_ID2 = #{userId2}

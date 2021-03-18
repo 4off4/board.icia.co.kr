@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icia.web.dao.TravelDao">
+
+<resultMap type="com.icia.web.model.Travel" id="travelResultMap2">
+   <id column="USER_ID2" property="userId2" />
+   <result column="USER_PWD2" property="userPwd2" />
+   <result column="USER_NAME2" property="userName2" />
+   <result column="USER_EMAIL2" property="userEmail2" />
+   <result column="STATUS2" property="status2" />
+   <result column="REG_DATE2" property="regDate2" />
+   <result column="GENDER2" property="gender2" />
+   <result column="USER_BIRTH2" property="userBirth2" />
+</resultMap>
+
+<select id="userSelect3" parameterType="string" resultMap="travelResultMap2">
+SELECT 
+    USER_ID2, 
+    NVL(USER_PWD2, '') AS USER_PWD2, 
+    NVL(USER_NAME2, '') AS USER_NAME2, 
+    NVL(USER_EMAIL2, '') AS USER_EMAIL2, 
+    NVL(STATUS2, 'N') AS STATUS2, 
+    NVL(TO_CHAR(REG_DATE2, 'YYYY.MM.DD HH24:MI:SS'), '') AS REG_DATE2,
+    NVL(GENDER2, '') AS GENDER2,
+    NVL(USER_BIRTH2, '') AS USER_BIRTH2
+FROM 
+    TBL_USER2
+WHERE 
+    USER_ID2 = #{value}
+</select>
+
+</mapper>

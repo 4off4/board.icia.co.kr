@@ -160,7 +160,7 @@ public class QnaService
       return qna;
    }
    
-   //댓글 등록
+   //답글 등록
    @Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
    public int qnaReplyInsert(Qna qna) throws Exception
    {

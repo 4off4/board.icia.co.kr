@@ -60,7 +60,7 @@
    border: 1px solid #F5dF4D; 
    background-color: #F5dF4D; 
    border-radius: 5px;
-   color:#939597; 
+   color:#000000; 
    padding: auto;
    margin: 0 auto; 
    text-align: center;
@@ -76,7 +76,7 @@ background-color: #F5dF4D;
 	border: 1px solid #F5dF4D; 
 	background-color: #F5dF4D; 
 	border-radius: 5px;
-	color:#939597; 
+	color:#000000; 
 /* 	padding: auto;
 	margin: 0 auto;  */
 }
@@ -91,7 +91,7 @@ background-color: #F5dF4D;
 	border: 1px solid #F5dF4D; 
 	background-color: #F5dF4D; 
 	border-radius: 5px;
-	color:#939597; 
+	color:#000000; 
 	padding: auto;
 	margin: 20px;
 	text-align: center;

@@ -22,12 +22,16 @@ function fn_view(pNoSeq2,pTitle)
 <section class="section">
 	<div class="container">
 		<div class="form-group"><h1 align="center">나의 일정</h1></div>
+		<br/>
 		<div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
 	         <c:if test="${!empty planlist2}">
 	            <c:forEach var="planMake" items="${planlist2}"   varStatus="status">
 	               <div class="item travel col-sm-6 col-md-4 col-lg-4 mb-4">
 	                  <a href="javascript:void(0)" onclick="fn_view(${planMake.pNoSeq2},'${planMake.pTitle}')" class="item-wrap fancybox">
-	                     <div class="work-info"><br><h2>${planMake.pTitle}</h2><p>상세보기</p></div> 
+	                     <div class="work-info">
+		                     <br><h1>${planMake.pTitle}</h1>
+		                     <p><mark>${planMake.pStart}</mark> ${(planMake.pEnd - planMake.pStart) + 1}Days </p>
+	                     </div>
 	                     <img class="img-fluid" src="/resources/images/globe.png">
 	                  </a>
 	               </div>         

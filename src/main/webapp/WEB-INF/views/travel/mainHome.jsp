@@ -196,6 +196,7 @@
 <!-- ======= Footer ======= -->
   <footer class="footer" role="contentinfo">
     <div class="container">
+    <hr/>
       <div class="row">
         <div class="col-sm-6">
           <p class="mb-1">&copy; Copyright travel 2021</p>

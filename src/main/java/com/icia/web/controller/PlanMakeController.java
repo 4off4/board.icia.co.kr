@@ -79,8 +79,6 @@ public class PlanMakeController {
        String pStart = HttpUtil.get(request,"pStart", "");
        String pEnd = HttpUtil.get(request, "pEnd", "");
 
-       
-
       PlanMake planMake = new PlanMake();
       
       planMake.setUserId2(userId2);

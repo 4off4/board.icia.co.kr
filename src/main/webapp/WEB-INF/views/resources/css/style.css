@@ -649,7 +649,7 @@ margin: auto;
 } */
 
 .btn-group button{ 
-border: 1px solid #F5dF4D; background-color: #F5dF4D; color:#939597; padding: auto;
+border: 1px solid #F5dF4D; background-color: #F5dF4D; color:#000000; padding: auto;
 margin: 0 auto; text-align: center;
 } 
 .btn-group button:hover{ color:white; background-color: #F5dF4D; }
@@ -1491,10 +1491,18 @@ user-select: none;
 .fr {
    float: right;
 }
+.fr input {
+   border: 1px solid #F5dF4D; 
+   background-color: #F5dF4D; 
+   color:#000000; 
+   padding: auto;
+   margin: 0 auto; 
+   text-align: center;
+}
 .fr button {
    border: 1px solid #F5dF4D; 
    background-color: #F5dF4D; 
-   color:#939597; 
+   color:#000000; 
    padding: auto;
    margin: 0 auto; 
    text-align: center;

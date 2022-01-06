@@ -5,30 +5,8 @@
 <!DOCTYPE html>
 <html>
 <%@ include file="/WEB-INF/views/include/head.jsp" %> 
-<meta http-equiv = "Content-Type" Content = "text/html; charset = UTF-8">
 <title>메인홈</title>
-
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="/resources/hiassets/img/sk.png" rel="icon">
-  <link href="/resources/hiassets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="/resources/hiassets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/resources/hiassets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="/resources/hiassets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="/resources/hiassets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="/resources/hiassets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="/resources/hiassets/vendor/owl.carousel/hiassets/owl.carousel.min.css" rel="stylesheet">
-  <link href="/resources/hiassets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="/resources/hiassets/css/style.css" rel="stylesheet">
+ 
 <body>
 <%@ include file="/WEB-INF/views/include/adminNavigation.jsp" %>
 <!-- ======= Our Team Section ======= -->
@@ -36,14 +14,12 @@
     <h2 style="display : inline-block;">관리자님 환영합니다!</h2>
       <div class="container">
         <div class="row">
-
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
             <div class="member">
               <div class="pic"><img src="/resources/hiassets/img/team/jw.png" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4 class="name">정 재 우</h4>
                 <span>조장</span>
-
               </div>
             </div>
           </div>

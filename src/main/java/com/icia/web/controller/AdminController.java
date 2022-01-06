@@ -565,11 +565,7 @@ public class AdminController
    }
    
  /*------------------고객센터 proc 끝------------------*/
-   
-   
 
-   ////////////////////////////////
-   
    //회원 강제탈퇴, 강탈 페이지로 연결
    @RequestMapping("admin/adminDelete")
    public String adminDelete() {

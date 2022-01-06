@@ -8,15 +8,22 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/*body {
-  font-family: "Inconsolata", sans-serif;
+/*
+body {
+  font-family: "Inconsolata", monospace;
   color: #939597;
   padding-bottom: 40px;
-}*/
+}
+
 body {
   font-family: 'Do Hyeon', sans-serif;
   font-size: large;
-  
+  color: #939597;
+  padding-bottom: 40px;
+}
+*/
+body {
+  font-family: 'Jua', sans-serif;
   color: #939597;
   padding-bottom: 40px;
 }
@@ -35,12 +42,12 @@ body {
 }
 .name
 {
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Jua', sans-serif;
   font-size: xx-large;
 }
 .name1
 {
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Jua', sans-serif;
   font-size: large;
 }
 a {
@@ -51,9 +58,9 @@ a:hover {
   color: #F5dF4D;
   text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: 'Do Hyeon', sans-serif;
-}
+/* h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Jua', sans-serif;
+} */
 
 .filters a {
   color: #000;
@@ -281,8 +288,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   border-radius: 0;
   background: #f8f9fa;
   border: 1px solid transparent;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
 }
 
 .form-control:active, .form-control:focus {
@@ -380,8 +385,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 /* Custom Navmenu */
 .custom-navmenu {
   background: #F5dF4D;
-  
-  
 }
 
 /*관리자페이지 nav*/
@@ -551,7 +554,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /*네비게이션패딩  */
 .container {
-margin: 30px auto;
+margin: 100px auto;
 }
 
 /*index styleseet(로그인창/회원가입창)*/
@@ -560,10 +563,7 @@ margin: 30px auto;
   padding: 15px;
   margin: 50px auto;
 }
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
+
 .form-signin .checkbox {
   font-weight: 400;
 }
@@ -573,38 +573,25 @@ margin: 30px auto;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: auto;
-  padding: 10px;
   font-size: 16px;
 }
 .form-signin .form-control:focus {
   z-index: 2;
 }
 .form-signin input[type="text"] {
-  margin-top: 20px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  
-  border: none;
+
   border-bottom: 1px solid #939597;
   background-color: transparent;
   transition: top .5s ease;
 }
 .form-signin input[type="password"] {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  
-  border: none;
+
   border-bottom: 1px solid #939597;
   background-color: transparent;
   transition: top .5s ease;
 }
 .form-signin input[type="radio"] {
-  margin-top: 20px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  
+
   boder: none;
   border-bottom: 1px solid #939597;
   background-color: transparent;
@@ -678,7 +665,7 @@ margin: 0 auto; text-align: center;
 
 /* 관리자 */
 .list{
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Jua', sans-serif;
   font-size: xx-large;
  
   padding-bottom: 40px;
@@ -717,7 +704,7 @@ margin: 0 auto; text-align: center;
 
 /************************여행장소소개**************************/
 .report {
-font-family: 'Do Hyeon', sans-serif;
+font-family: 'Jua', sans-serif;
   font-size: large;
   
   color: #939597;
@@ -1330,7 +1317,6 @@ user-select: none;
 
 #hero .carousel-content {
   text-align: left;
-  
   text-shadow: 1px 1px 5px #000;
 }
 
@@ -1402,7 +1388,7 @@ user-select: none;
 }
 
 #hero .btn-get-started {
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Jua', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;

@@ -114,7 +114,7 @@ ${planDate.pDay} ${planDate.pPlace}</c:if><c:if test="${planDate.pNoSeq2 ne pNoS
 	
 	<!-- 일정 text -->		
 	<textarea class="form-control" rows="10" name="hiBbsContent" id="hiBbsContent" style="ime-mode:active;" placeholder="내용을 입력해주세요" required></textarea>
-    <input type="file" id="hiBbsFile" name="hiBbsFile" class="form-control mb-2" placeholder="파일을 선택하세요." required />
+    <!-- <input type="file" id="hiBbsFile" name="hiBbsFile" class="form-control mb-2" placeholder="파일을 선택하세요." required /> -->
     <div class="btn-group">
        <div class="col-sm-12">
           <button type="button" id="btnWrite" class="btn btn-primary" title="저장">저장</button>

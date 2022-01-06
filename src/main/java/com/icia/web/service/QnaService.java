@@ -91,8 +91,9 @@ public class QnaService
       
       return list;
    }
-                   //트랜젝션으로 묶어서 순서가 완료되야 다음 걸따르게.
+    //트랜젝션으로 묶어서 순서가 완료되야 다음것을 따르게.
    //게시물 등록     //내 트렌젝션이 부모가 있음 부모거를 따르고 그렇지 않으면 내꺼를 호출한다
+   
    @Transactional(propagation=Propagation.REQUIRED, rollbackFor=Exception.class)
    public int qnaInsert(Qna qna) throws Exception
    {

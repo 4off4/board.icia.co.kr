@@ -34,8 +34,6 @@ public class MemberController {
     MemberService memberservice; //서비스를 호출하기 위해 의존성을 주입
     
     
-    
-    
     //로깅을 위한 변수
     private static final Logger logger=
     LoggerFactory.getLogger(MemberController.class);
@@ -49,7 +47,7 @@ public class MemberController {
             Random r = new Random();
             int dice = r.nextInt(4589362) + 49311; //이메일로 받는 인증코드 부분 (난수)
             
-            String setfrom = "chlgusrms96@gamil.com";
+            String setfrom = "4off4@gamil.com";
             String tomail = HttpUtil.get(request ,"e_mail", ""); // 받는 사람 이메일   
             
             logger.debug("+++++++++++++++++tomail = [ "+ tomail + "] +++++++++++++++++++++");

@@ -11,9 +11,8 @@
 <%@ include file="/WEB-INF/views/include/adminNavigation.jsp" %>
 <div class="container">
    <h2 class="list" style="text-align: center">회원 강제 탈퇴</h2>
-   <br><br>
    <h4 class="list" style="text-align: center">-회원 아이디-</h4>
-</div>  
+
   
       <table class="form1">
       <tr class=btn-group2>
@@ -37,6 +36,7 @@
          
       </tr>
    </table>
+   </div>  
 <script>
 $(document).ready(function() {      
    

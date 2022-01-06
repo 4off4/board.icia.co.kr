@@ -19,11 +19,11 @@ public interface QnaDao
    //게시물 등록
    public int qnaInsert(Qna qna);     //HiBoardDao.xml 가서 id값과 이름을 똑같이 맞추기
    
-   //게시물 답글 등록
-   public int qnaReplyInsert(Qna qna);
-   
    //게시물 조회
    public Qna qnaSelect(long qnaHiBbsSeq);    //long타입으로 hiBbsSeq를 받음
+   
+   //게시물 답글 등록
+   public int qnaReplyInsert(Qna qna);
    
    //게시물 수정
    public int qnaUpdate(Qna qna);
